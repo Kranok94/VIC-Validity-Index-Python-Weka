@@ -19,10 +19,20 @@ ranking of the University. For example, a partition of 75 would assing all the U
 Rank 75 the value of 0 and the Universities with Rank 76 to 200 with the value of 1. The partitions are made
 in both .arff and .csv format.
 
-> 
-is designed to work with the data set put in the Data folder as a text file. 
-In this case, the data set contains information of the Top 200 Universities of the QS ranking. 
-
-Having the data set, partitions where made in order to classify the Universities among two     
-classes. Take into account if the code is going to be adapted to other data sets,   
-it requires certain changes in the code.
+> Having the partitions, the script that evaluates the classifiers is applied where it takes the files located in
+the partitions folders of both CSV and ARFF. The following classifiers can be used:
+  - Bayesian Networks             --> BayesianNetwork                                 
+  - Multi-Layer Perceptron        --> MultiLayerPerceptron                            
+  - AdaBoost                      --> AdaBoost                                        
+  - K Nearest Neighbor            --> KNN                                             
+  - Random Forest                 --> RandomForest                                    
+  - Support Vector Machines       --> SVM                                             
+  - Naive Bayes                   --> NaiveBayes                                      
+  - Linear Discriminant Analysis  --> LDA         
+  
+> By default, all the classifiers are used with 10-Fold Cross Validation. If only certain classifiers want to be used
+their respective name as presented on the right of the arrow must be put as an argument when running the script. If many classifiers want to be used, they have to be put together separated by a comma. Likewise, the value of the K-Fold can be changed from the default value. An example execution is shown as followed:
+```
+$ python3 Evaluate_Classifiers.py -c SVM,NaiveBayes,LDA -k 5 
+```
+                                            
