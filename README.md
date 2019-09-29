@@ -71,8 +71,7 @@ the partitions folders of both CSV and ARFF. The following classifiers can be us
   - Naive Bayes                   --> NaiveBayes                                      
   - Linear Discriminant Analysis  --> LDA         
   
-> By default, all the classifiers are used with 10-Fold Cross Validation. If only certain classifiers want to be used
-their respective name as presented on the right of the arrow must be put as an argument when running the script. If many classifiers want to be used, they have to be put together separated by a comma. Likewise, the value of the K-Fold can be changed from the default value. An example execution with SVMs, Naive Bayes, LDA and 5-Fold Cross Validation is shown as followed:
+> By default, all the classifiers are used with 10-Fold Cross Validation. Some classifiers were implemented with sklearn and others with Weka. If only certain classifiers want to be used their respective name as presented on the right of the arrow must be put as an argument when running the script. If many classifiers want to be used, they have to be put together separated by a comma. Likewise, the value of the K-Fold can be changed from the default value. An example execution with SVMs, Naive Bayes, LDA and 5-Fold Cross Validation is shown as followed:
 ```
 $ python3 Evaluate_Classifiers.py -c SVM,NaiveBayes,LDA -k 5 
 ```
