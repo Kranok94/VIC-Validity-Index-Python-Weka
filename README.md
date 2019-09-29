@@ -53,6 +53,13 @@ ranking of the University. For example, a partition of 75 would assing all the U
 Rank 75 the value of 0 and the Universities with Rank 76 to 200 with the value of 1. The partitions are made
 in both .arff and .csv format.
 
+```
+$ python3 Form_Partitions_ARFF.py
+```
+```
+$ python3 Form_Partitions_CSV.py
+```
+
 > Having the partitions, the script that evaluates the classifiers is applied where it takes the files located in
 the partitions folders of both CSV and ARFF. The following classifiers can be used:
   - Bayesian Networks             --> BayesianNetwork                                 
@@ -65,12 +72,16 @@ the partitions folders of both CSV and ARFF. The following classifiers can be us
   - Linear Discriminant Analysis  --> LDA         
   
 > By default, all the classifiers are used with 10-Fold Cross Validation. If only certain classifiers want to be used
-their respective name as presented on the right of the arrow must be put as an argument when running the script. If many classifiers want to be used, they have to be put together separated by a comma. Likewise, the value of the K-Fold can be changed from the default value. An example execution is shown as followed:
+their respective name as presented on the right of the arrow must be put as an argument when running the script. If many classifiers want to be used, they have to be put together separated by a comma. Likewise, the value of the K-Fold can be changed from the default value. An example execution with SVMs, Naive Bayes, LDA and 5-Fold Cross Validation is shown as followed:
 ```
 $ python3 Evaluate_Classifiers.py -c SVM,NaiveBayes,LDA -k 5 
 ```
 
 > If the altenative library that used GPU wants to be used, it has to be executed like this:
 ```
-$ python3.6 Evaluate_Classifiers_V8.py -c SVM,NaiveBayes,LDA -k 5
-```                                            
+$ python3.6 Evaluate_Classifiers.py -c SVM,NaiveBayes,LDA -k 5
+```    
+> The evaluation of classifiers script generates an output file with the values of the performances of the classifiers and the maximum among them per partition. In order to graph the values, there is script in this repository.
+```
+$ python3 Generate_Graphs.py
+```
