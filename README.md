@@ -23,7 +23,7 @@ classifiers, the resulting validity index is the highest among all the classifie
   $ pip3 install weka
   ```
   
-> An alternative of sklearn can be used which is h2o4gpu which has almost the same libraries as sklearn but it is able to execute certain functions on a GPU. **Note: Requires Python 3.6.**
+> An alternative of sklearn can be used which is h2o4gpu which has almost the same libraries as sklearn but it is able to execute certain functions on a GPU. **Note: This library requires Python 3.6.**
   - https://github.com/h2oai/h2o4gpu
 
 **Implementation**
