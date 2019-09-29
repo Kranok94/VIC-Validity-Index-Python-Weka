@@ -13,32 +13,13 @@ classifiers, the resulting validity index is the highest among all the classifie
 
 **Installation**
 > The implemented code requires the following libraries to be installed in Python:
-  - Numpy
   ```
   $ pip3 install numpy
-  ```
-  - Scipy
-  ```
   $ pip3 install scipy
-  ```
-  - Pandas
-  ```
   $ pip3 install pandas
-  ```
-  - Statistics
-  ```
   $ pip3 install statistics
-  ```
-  - Sklearn
-  ```
   $ pip3 install sklearn2
-  ```
-  - Subprocess
-  ```
   $ pip3 install subprocess32
-  ```
-  - Weka Wrapper
-  ```
   $ pip3 install weka
   ```
   
