@@ -4,7 +4,7 @@ import random
 import os
 
 fileInText = "Data_sets/Data.txt"
-fileInTemplate = "Data_sets/Partition_Template_V2.csv"
+fileInTemplate = "Data_sets/Partition_Template.csv"
 
 for partition in range(50,151):
 	count = 1
