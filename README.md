@@ -11,6 +11,40 @@ Email: **kb.kwanloo@gmail.com**
 of classifiers, it applies K-Fold Cross Validation with ROC-Area Under the Curve (AUC). After evaluating all the
 classifiers, the resulting validity index is the highest among all the classifiers.
 
+**Installation**
+> The implemented code requires the following libraries to be installed in Python:
+  - Numpy
+  ```
+  $ pip3 install numpy
+  ```
+  - Scipy
+  ```
+  $ pip3 install scipy
+  ```
+  - Pandas
+  ```
+  $ pip3 install pandas
+  ```
+  - Statistics
+  ```
+  $ pip3 install statistics
+  ```
+  - Sklearn
+  ```
+  $ pip3 install sklearn2
+  ```
+  - Subprocess
+  ```
+  $ pip3 install subprocess32
+  ```
+  - Weka Wrapper
+  ```
+  $ pip3 install weka
+  ```
+  
+> An alternative of sklearn can be used which is h2o4gpu which has almost the same libraries as sklearn but it is able to execute certain functions on a GPU. **Note: Requires Python 3.6.**
+  - https://github.com/h2oai/h2o4gpu
+
 **Implementation**
 > The focus of this project is evaluating a data set holding information of the Top 200 Universities of the
 QS World Ranking in 2019. In this case partitions are made in order to evaluate variations of the data set.
@@ -24,7 +58,7 @@ the partitions folders of both CSV and ARFF. The following classifiers can be us
   - Bayesian Networks             --> BayesianNetwork                                 
   - Multi-Layer Perceptron        --> MultiLayerPerceptron                            
   - AdaBoost                      --> AdaBoost                                        
-  - K Nearest Neighbor            --> KNN                                             
+  - K-Nearest Neighbor            --> KNN                                             
   - Random Forest                 --> RandomForest                                    
   - Support Vector Machines       --> SVM                                             
   - Naive Bayes                   --> NaiveBayes                                      
@@ -35,4 +69,8 @@ their respective name as presented on the right of the arrow must be put as an a
 ```
 $ python3 Evaluate_Classifiers.py -c SVM,NaiveBayes,LDA -k 5 
 ```
-                                            
+
+> If the altenative library that used GPU wants to be used, it has to be executed like this:
+```
+$ python3.6 Evaluate_Classifiers_V8.py -c SVM,NaiveBayes,LDA -k 5
+```                                            
