@@ -4,7 +4,7 @@ import random
 import os
 
 fileInText = "Data_sets/Data.txt"
-fileInArff = "Data_sets/Partition_Template_V2.arff"
+fileInArff = "Data_sets/Partition_Template.arff"
 
 for partition in range(50,151):
 	#partition = 10
