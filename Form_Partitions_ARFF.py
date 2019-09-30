@@ -2,7 +2,7 @@
 # --------------------------------------                                                |
 #| Author: Kevin Brian Kwan Chong Loo   |                                               |
 #| ID: A01192177                        |                                               |
-#| Data: September 30th, 2019           |                                               |
+#| Date: September 30th, 2019           |                                               |
 #| Email: kb.kwanloo@gmail.com          |                                               |
 # --------------------------------------                                                |
 #                                                                                       |
