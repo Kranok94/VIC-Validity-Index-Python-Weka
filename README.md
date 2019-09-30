@@ -57,7 +57,7 @@ the partitions folders of both CSV and ARFF. The following classifiers can be us
 $ python3 Evaluate_Classifiers.py -c SVM,NaiveBayes,LDA -k 5 
 ```
 
-> If the altenative library that uses GPU wants to be applied, the code has to import the h2o4gpu libraries it has to be executed like this:
+> If the altenative library that uses GPU wants to be applied, the code has to import the h2o4gpu library it has to be executed like this:
 ```
 $ python3.6 Evaluate_Classifiers.py -c SVM,NaiveBayes,LDA -k 5
 ```    
